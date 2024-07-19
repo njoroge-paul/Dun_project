@@ -1,0 +1,19 @@
+{
+    "orders": [
+      {
+        "id": 1,
+        "name": "Burger",
+        "price": 20
+      },
+      {
+        "id": 2,
+        "name": "Pizza",
+        "price": 25
+      },
+      {
+        "id": 3,
+        "name": "Salad",
+        "price": 10
+      }
+    ]
+  }

@@ -675,6 +675,10 @@ video {
   left: 0px;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .top-0{
   top: 0px;
 }
@@ -750,16 +754,16 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
 
 .ml-4{
   margin-left: 1rem;
-}
-
-.ml-\[55rem\]{
-  margin-left: 55rem;
 }
 
 .mr-32{
@@ -774,8 +778,8 @@ video {
   margin-top: 5rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mt-6{
@@ -1767,10 +1771,6 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-xl{
