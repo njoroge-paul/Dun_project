@@ -36,6 +36,26 @@ orderButtons.forEach((button) => {
 
       // Hide the modal
       modal.classList.add('hidden');
+
+       // Send the order to the server using fetch API
+       fetch('http://localhost:3000/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(order)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Order created successfully:', data);
+        responseMessage.textContent = 'Order created successfully!'; // Display success message
+        responseMessage.classList.add('success'); // Add success class to the response message element
+      })
+      .catch(error => {
+        console.error('Error creating order:', error);
+        responseMessage.textContent = 'Error creating order. Please try again.'; // Display error message
+        responseMessage.classList.add('error'); // Add error class to the response message element
+      });
     });
   });
 });
